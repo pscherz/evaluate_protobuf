@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.0)
 
 project(protobuf_test1 VERSION 0.1.0 LANGUAGES CXX)
 
-find_package(protobuf PATHS "C:/Users/patri/Documents/Projects/Libs/cmake")
+find_package(protobuf)
 
 add_executable(${PROJECT_NAME} main.cpp message.pb.cc message.pb.h)
 target_link_libraries(${PROJECT_NAME} protobuf::libprotobuf)
